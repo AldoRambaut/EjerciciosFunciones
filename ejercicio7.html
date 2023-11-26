@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Ejercicio 7</title>
+    <script>
+        let numeros = [];
+        for (let index = 0; index < 3; index++) {
+            numeros[index] = +prompt(`Ingrese el numero ${index +1}`);
+        }
+        alert(`Los numeros ingresados son: ${numeros}`);
+        const ordenarAscendente = (numeros) => numeros.sort((a, b) => a-b);
+        alert(`Los numeros en orden ascendente quedarian asi: ${ordenarAscendente(numeros)}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

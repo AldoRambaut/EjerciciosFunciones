@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividad Ejercicio 4</title>
+    <script>
+        let numero = prompt("Ingrese un numero para invertir sus cifras").toString();
+        let indice = numero.length - 1;
+        console.log(`Tipo de la variable numero : ${numero} y indice : ${indice}`);
+        let respuesta = "";
+        const invertirNumero = (numero, indice, respuesta) => {
+            if (indice > 0) {
+                respuesta += numero.charAt(indice);
+                console.log(numero.charAt(indice));
+                indice--;
+                return invertirNumero(numero, indice, respuesta);
+            }
+            else{
+                respuesta += numero.charAt(indice);
+                return parseInt(respuesta);
+            }
+        }
+        alert(`El numero ${numero} invertido quedaria ${invertirNumero(numero, indice, respuesta)}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

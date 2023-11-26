@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividad Ejercicio 3</title>
+    <script>
+        let numero = +prompt(`Ingrese numero para convertir en binario`);
+        let num = numero;
+        let binario = "";
+        const convertirABinario = (numero) => {
+            binario += (numero % 2);
+            console.log(`binario : ${binario}`);
+            numero = Math.floor(numero/2);
+            console.log(`numero : ${numero}`);
+            if (numero > 0) convertirABinario(numero);
+            else{
+                let respuesta = "";
+                console.log(typeof(binario));
+                for (let index = binario.length - 1; index >= 0 ; index--) {
+                    respuesta += binario.charAt(index);
+                }
+                alert(`El numero ${num} en binario es ${respuesta}`);
+            }
+        }
+        convertirABinario(numero);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

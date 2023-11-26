@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Ejercicio 5</title>
+    <script>
+        let grados = +prompt("Ingrese temperatura en grados");
+        const aKelvin = (temp) => `${temp} grados celsius equivalen a ${temp + 273.15} grados kelvin`;
+        const aFahrenheit = (temp) => `${temp} grados celsius equivalen a ${(9*temp) / 5 + 32} grados fahrenheit`;
+        let operacion = prompt("Convertir temperatura ingresada a\nkelvin/fahrenheit").toLowerCase();
+        switch(operacion){
+            case "kelvin":
+                alert(aKelvin(grados));
+                break;
+            case "fahrenheit":
+                alert(aFahrenheit(grados));
+                break;
+            default:
+                alert("Seleccion invalida");
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

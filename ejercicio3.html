@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Ejercicio 3</title>
+    <script>
+        let num1 = +prompt("Ingrese primer numero");
+        console.log(typeof(num1));
+        let num2 = +prompt("Ingrese segundo numero");
+        console.log(typeof(num2));
+        const sumar = (a, b) => a + b;
+        const restar = (a, b) => a - b;
+        const multiplicar = (a, b) => a * b;
+        const dividir = (a, b) => a / b;
+        let operacion = prompt("Ingrese operacion a realizar\nsuma/resta/multiplicacion/division").toLowerCase();
+        switch(operacion){
+            case "suma":
+                alert(sumar(num1, num2));
+                break;
+            case "resta":
+                alert(restar(num1, num2));
+                break;
+            case "multiplicacion":
+                alert(multiplicar(num1, num2));
+                break;
+            case "division":
+                alert(dividir(num1, num2));
+                break;
+            default:
+                alert("Operacion no valida");
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividad Ejercicio 2</title>
+    <script>
+        let numero = +prompt(`Ingrese un numero para la cuenta regresiva`);
+        const cuentaRegresiva = (numero) => {
+            if(numero>1){
+                document.write(`${numero--} , `);
+                cuentaRegresiva(numero);
+            }
+            else {
+                document.write(`${numero}`)
+            }
+        }
+        cuentaRegresiva(numero);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

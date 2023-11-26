@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividad Ejercicio 1</title>
+    <script>
+        let numero = +prompt(`Ingrese el numero de numeros de la serie de Fibonacci que desea ver`);
+        let serie = [0,1];
+        const fibonacci = (serie, limite) => {
+            while (serie.length < limite) {
+                serie.push(serie[serie.length-1] + serie[serie.length-2]);
+                fibonacci(serie, limite);
+            }
+            return serie;
+        }
+        alert(fibonacci(serie, numero));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
